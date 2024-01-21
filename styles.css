@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#search {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    float: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(0.95); /* Make it slightly smaller on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card h3 {
+    margin: 5px 0;
+}
+
+.recipe-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.recipe-card button:hover {
+    background-color: #45a049;
+}
+
+#recipeResults {
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+#fridge {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#fridge input[type="text"] {
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#fridgeContents div {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fridgeContents button {
+    padding: 5px 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#fridgeContents button:hover {
+    background-color: #ff1a1a;
+}
+
+.recipe {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe h3 {
+    margin: 0;
+}
+
+.recipe button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recipe button.view {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.recipe button.remove {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+.create-recipe-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#createRecipeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#createRecipeForm input[type="text"], 
+#createRecipeForm textarea {
+    margin: 10px;
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#createRecipeForm button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#createRecipeForm button:hover {
+    background-color: #45a049;
+}
+
+#ingredientList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ingredientList li {
+    margin-bottom: 10px;
+}
+
+.removeIngredient {
+    background-color: #ff4c4c;
+    color: white;
+    /* other button styles */
+}
+

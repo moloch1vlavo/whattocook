@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Recipe</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Recipe</h1>
+    </header>
+
+    <main>
+        <form id="createRecipeForm">
+            <input type="text" id="recipeName" placeholder="Recipe Name" required>
+            <textarea id="recipeInstructions" placeholder="Recipe Instructions" required></textarea>
+
+            <div id="ingredientList">
+                <h3>Ingredients</h3>
+                <ul id="ingredients">
+                </ul>
+                <button type="button" id="addIngredientButton">Add Ingredient</button>
+            </div>
+
+            <button type="submit">Create Recipe</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WhatToCook</p>
+    </footer>
+
+    <script src="createrecipe.js"></script>
+</body>
+</html>

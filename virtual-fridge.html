@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Fridge</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Virtual Fridge</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-recipes.html">My Recipes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Inside the <main> tag in VirtualFridge.html -->
+        <section id="fridge">
+            <h2>Manage Your Ingredients</h2>
+            <div>
+                <input type="text" id="ingredientInput" placeholder="Add ingredient...">
+                <input type="text" id="quantityInput" placeholder="Quantity (e.g., 2 kg, 3 liters)">
+                <button id="addIngredient">Add</button>
+            </div>
+            <div id="fridgeContents">
+                <!-- Ingredients will be listed here -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WhatToCook</p>
+    </footer>
+
+    <script src="virtualfridge.js"></script>
+</body>
+
+</html>
