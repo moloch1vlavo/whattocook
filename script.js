@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Create an object similar to the API recipe structure
         return {
             strMeal: recipe.name,
-            strMealThumb: '', // Custom image URL or a placeholder
+            strMealThumb: '/noimage.jpg', // Custom image URL or a placeholder
             idMeal: 'custom_' + index, // Use index as identifier for custom recipes
             // Add other fields if necessary
         };
